@@ -30,7 +30,7 @@ C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetA
 C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetApi\obj\Debug\netcoreapp3.1\staticwebassets\CoreSmartSheetApi.StaticWebAssets.xml
 C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\CoreSmartSheetApi.styles.css
 C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetApi\obj\Debug\netcoreapp3.1\CoreSmartSheetApi.RazorTargetAssemblyInfo.cache
-C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetApi\obj\Debug\netcoreapp3.1\CoreSmartSheetApi.csproj.CopyComplete
 C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetApi\obj\Debug\netcoreapp3.1\CoreSmartSheetApi.dll
 C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetApi\obj\Debug\netcoreapp3.1\CoreSmartSheetApi.pdb
 C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetApi\obj\Debug\netcoreapp3.1\CoreSmartSheetApi.genruntimeconfig.cache
+C:\Users\Tharmini\projects\ReadWriteSmartsheet\CoreSmartSheetApi\CoreSmartSheetApi\obj\Debug\netcoreapp3.1\CoreSmartSheetApi.csproj.AssemblyReference.cache

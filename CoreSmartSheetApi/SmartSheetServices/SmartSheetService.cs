@@ -86,12 +86,12 @@ namespace CoreSmartSheetApi.SmartSheetServices
 						{
 							Id = Convert.ToInt64(tmpCell.ColumnId),
 							No = Convert.ToInt32(tmpRow.Cells[0].Value),
-							//Question = Convert.ToString(tmpCell.Value), 
 							Question = Convert.ToString(tmpRow.Cells[1].Value),
-							FieldType = Convert.ToString(tmpRow.Cells[2].Value),
-							FieldValues = Convert.ToString(tmpRow.Cells[3].Value),
-							IsRequired = Convert.ToBoolean(tmpRow.Cells[4].Value),
-							Visible = Convert.ToString(tmpRow.Cells[5].Value),
+							FieldName = Convert.ToString(tmpRow.Cells[2].Value),
+							FieldType = Convert.ToString(tmpRow.Cells[3].Value),
+							FieldValues = Convert.ToString(tmpRow.Cells[4].Value),
+							IsRequired = Convert.ToBoolean(tmpRow.Cells[5].Value),
+							Visible = Convert.ToString(tmpRow.Cells[6].Value),
 
 						};
 					}
@@ -133,14 +133,14 @@ namespace CoreSmartSheetApi.SmartSheetServices
 				cellsA = new Cell[]
 				{
 					 new Cell.AddCellBuilder(sheet.Columns[0].Id, data[0].UserId).Build()
-					,new Cell.AddCellBuilder(sheet.Columns[1].Id, (data[0].Answer!="")?data[0].Answer:"NA").Build()
-					,new Cell.AddCellBuilder(sheet.Columns[2].Id, (data[1].Answer!="")?data[1].Answer:"NA").Build()
-					,new Cell.AddCellBuilder(sheet.Columns[3].Id, (data[2].Answer!="")?data[2].Answer:"NA").Build()
-					,new Cell.AddCellBuilder(sheet.Columns[4].Id, (data[3].Answer!="")?data[3].Answer:"NA").Build()
-					,new Cell.AddCellBuilder(sheet.Columns[5].Id, (data[4].Answer!="")?data[4].Answer:"NA").Build()
-					,new Cell.AddCellBuilder(sheet.Columns[6].Id, (data[5].Answer!="")?data[5].Answer:"NA").Build()
-					,new Cell.AddCellBuilder(sheet.Columns[7].Id, (data[6].Answer!="")?data[6].Answer:"NA").Build()
-					,new Cell.AddCellBuilder(sheet.Columns[8].Id, (data[7].Answer!="")?data[7].Answer:"NA").Build()
+					,new Cell.AddCellBuilder(sheet.Columns[1].Id, (data[0].Answer!="" || data[0].Answer!=null )?data[0].Answer:"NA").Build()
+					,new Cell.AddCellBuilder(sheet.Columns[2].Id, (data[1].Answer!="" || data[1].Answer!=null )?data[1].Answer:"NA").Build()
+					,new Cell.AddCellBuilder(sheet.Columns[3].Id, (data[2].Answer!="" || data[2].Answer!=null )?data[2].Answer:"NA").Build()
+					,new Cell.AddCellBuilder(sheet.Columns[4].Id, (data[3].Answer!="" || data[3].Answer!=null )?data[3].Answer:"NA").Build()
+					,new Cell.AddCellBuilder(sheet.Columns[5].Id, (data[4].Answer!="" || data[4].Answer!=null )?data[4].Answer:"NA").Build()
+					,new Cell.AddCellBuilder(sheet.Columns[6].Id, (data[5].Answer!="" || data[5].Answer!=null )?data[5].Answer:"NA").Build()
+					,new Cell.AddCellBuilder(sheet.Columns[7].Id, (data[6].Answer!="" || data[6].Answer!=null )?data[6].Answer:"NA").Build()
+					,new Cell.AddCellBuilder(sheet.Columns[8].Id, (data[7].Answer!="" || data[7].Answer!=null )?data[7].Answer:"NA").Build()
 
 				};
 				rowA = new Row.AddRowBuilder(true, null, null, null, null).SetCells(cellsA).Build();
@@ -186,7 +186,9 @@ namespace CoreSmartSheetApi.SmartSheetServices
 						MappingSheetData = new MappingSheet()
 						{
 							Key = Convert.ToString(tmpRow.Cells[0].Value),
-							Values = Convert.ToString(tmpRow.Cells[1].Value)
+							Values = Convert.ToString(tmpRow.Cells[1].Value),
+							Style = Convert.ToString(tmpRow.Cells[2].Value),
+							Theme = Convert.ToString(tmpRow.Cells[3].Value),
 						};
 					}
 					result.Add(MappingSheetData);
